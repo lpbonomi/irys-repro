@@ -1,0 +1,17 @@
+{
+  "name": "blockchain-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "module",
+  "types": "dist",
+  "scripts": {
+    "dev": "npx tsc --watch",
+    "build": "npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@irys/sdk": "^0.1.15"
+  }
+}
