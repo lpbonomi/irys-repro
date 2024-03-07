@@ -1,5 +1,5 @@
 
-export default async function RootLayout() {
+export default async function RootLayout({ children } : {children: React.ReactNode}) {
   return (
     <html
       lang="es"
@@ -8,6 +8,7 @@ export default async function RootLayout() {
       <head>
       </head>
       <body className="bg-black min-w-[100vw] min-h-screen text-white">
+        {children}
       </body>
     </html>
   )
