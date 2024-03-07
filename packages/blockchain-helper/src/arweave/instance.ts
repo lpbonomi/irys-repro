@@ -1,17 +1,18 @@
 import { readFileSync } from "fs";
 import Irys from "@irys/sdk";
+import { ENV } from "../../env.js";
 
 
 export function getIrysInstance(){ 
-    const walletPath = 'SOLANA_CUSTODIAL_SECRET_KEY_PATH';
+    const walletPath = ENV.SOLANA_CUSTODIAL_SECRET_KEY_PATH;
     const key = JSON.parse(readFileSync(walletPath!).toString());
 
     return new Irys({
         key,
-        url: 'BUNDLR_RPC_HOST', 
+        url: ENV.BUNDLR_RPC_HOST, 
         token:'solana',
         config: {
-            providerUrl: 'BUNDLR_SOLANA_RPC_HOST',
+            providerUrl: ENV.BUNDLR_SOLANA_RPC_HOST,
             timeout: 120000,
         }
     });
