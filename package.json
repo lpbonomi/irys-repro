@@ -6,11 +6,15 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
-    "build": "turbo run build",
-    "start": "turbo run start"
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "checkCompile": "turbo run checkCompile"
   },
   "devDependencies": {
     "turbo": "^1.12.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.5.1"
+  }
 }

@@ -1,1 +1,1 @@
-export * from './src/arweave/instance.js'
+export * from './src/arweave/uploadFile.js'

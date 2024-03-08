@@ -1,6 +1,6 @@
-import { readFileSync } from "fs";
-import Irys from "@irys/sdk";
 import { ENV } from "../../env.js";
+import Irys from "@irys/sdk";
+import { readFileSync } from "fs";
 
 
 export function getIrysInstance(){ 

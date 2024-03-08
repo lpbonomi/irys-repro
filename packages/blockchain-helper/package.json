@@ -12,11 +12,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@irys/sdk": "^0.1.15",
-    "dotenv": "^16.4.5",
-    "zod": "^3.22.4"
+    "@irys/sdk": "^0.1.14",
+    "aws-helper": "*",
+    "axios": "^1.6.2",
+    "borsh": "^2.0.0",
+    "crypto-js": "^4.2.0",
+    "database": "*",
+    "ethers": "^6.9.0",
+    "misc": "*",
+    "seedrandom": "^3.0.5"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.1",
+    "@types/seedrandom": "^3.0.8",
     "dotenv-cli": "^7.3.0"
   }
 }

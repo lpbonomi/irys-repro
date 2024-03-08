@@ -1,14 +1,14 @@
+import { ReactNode } from 'react'
 
-export default async function RootLayout({ children } : {children: React.ReactNode}) {
+type Props = {
+  children: ReactNode
+}
+
+export default async function RootLayout({ children }: Props) {
   return (
-    <html
-      lang="es"
-      className="font-sf-pro-display size-full invisible-scrollbar"
-    >
-      <head>
-      </head>
+    <html lang="es">
       <body className="bg-black min-w-[100vw] min-h-screen text-white">
-        {children}
+          {children}
       </body>
     </html>
   )
